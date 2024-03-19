@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container" style="height: 100vh; width: 100%; font-size: 20px;"></div>
+
+    <script>
+      const container = document.getElementsByTagName("div")[0];
+      
+      const header = document.createElement("div");
+      const aside = document.createElement("div");
+      const sectionA = document.createElement("div");
+      const sectionB = document.createElement("div");
+      const footer = document.createElement("div");
+
+
+      container.setAttribute("style", "height:100vh;  width:100vw; background-color:red; font-size: 30px; color:#fff; display:flex; justify-content:center;");
+
+
+     
+      header.innerHTML = "header";
+      header.setAttribute("style", "height:20vh;  width:100vw; background-color:blue; font-size: 30px; color:#fff; display:flex; justify-content:center;");
+      container.appendChild(header);
+     
+      
+        aside.innerHTML = "Aside";
+        aside.setAttribute("style", "height:60vh;  width:50vw; background-color:green; font-size: 30px; color:#fff; position: absolute; top: 20%;left: 0; text-align: center ");
+        container.appendChild(aside);
+
+        sectionA.innerHTML ="sectionA";
+        sectionA.setAttribute("style", "height: 30vh;width:50vw;background-color: #fff;color: #000;position: absolute;top: 20%; left: 50%; text-align: center" );
+        container.appendChild(sectionA);
+
+        sectionB.innerHTML = "sectionB";
+        sectionB.setAttribute("style", "height: 30vh; width: 50vw; background-color: #000;position: absolute;top: 50.1%; left:50%; text-align: center");
+        container.appendChild(sectionB);
+
+
+        footer.innerHTML = "Footer";
+        footer.setAttribute("style", "height: 20vh;width:100vw;background-color: blue;position:absolute; bottom: 0; text-align: center");
+        container.appendChild(footer);
+
+    
+    </script>
+</body>
+</html>

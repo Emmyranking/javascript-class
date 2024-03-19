@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+        <div class="success">
+            <div id="demo">
+                <h2>successful</h2>
+                <button><a href="formassignment.html">home</a></button>
+            </div>
+           
+        </div>
+    <div class="container">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <h2 class="login">login</h2>
+            <div class="user">
+                <input type="text" name="username" placeholder="username:" id="username">
+            <i class="fa-solid fa-user icon"></i>
+            </div>
+            <div class="password-div">
+                <input type="password" name="username" placeholder="password:" id="password" maxlength="6">
+                <i class="fa-solid fa-lock icon"></i>
+            </div>
+            <div class="email">
+                <input type="email" name="email" placeholder="email:" id="email">
+                <i class="fa-solid fa-envelope icon" ></i>
+            </div>
+            <div class="remember">
+
+                <div class="forget-pass"><a href="#">forgot password?</a> </div>
+            </div>
+            <input type="submit" value="login" class="button">
+            <div class="account">
+                don't have an account?  <span><a href="#">register</a> </span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+     const success = document.querySelector(".success");
+     const container = document.querySelector(".container");
+     const userName = document.getElementById("username");
+     const passWord = document.getElementById("password");
+     const email = document.getElementById("email");
+     const form = document.querySelector("form");
+        console.log(success)
+     function validateForm(){
+        const username = document.forms["myForm"]["username"];
+
+
+        if(username.value === "" && passWord.value === "" && email.value === ""){
+           alert("field can not be empty");
+            return false;
+        }
+        else{
+            success.style.display = "block";
+            form.style.display = "none";
+            container.style.display = "none";
+            return false;
+        }
+     }
+     
+    </script>
+</body>
+</html>

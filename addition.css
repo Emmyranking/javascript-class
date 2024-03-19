@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(100% - 9vw,1128px);
+    margin-inline: auto;
+    gap: 40px;
+}
+input{
+    width: 50%;
+    height: 40px;
+    
+}
+#n1{
+    background: blue;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#result:hover{
+    background: #fff;
+    color: #000;
+    border: 3px solid blue;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#n1:hover{
+    background: #fff;
+    color: #000;
+    border: 3px solid blue;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#n2{
+    background: blue;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#n2:hover{
+    background: #fff;
+    color: #000;
+    border: 3px solid blue;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#operators{
+    width: 90px;
+    height: 50px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    font-weight: 700;
+}
+button{
+    width: 90px;
+    height: 50px;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    font-weight: 700;
+}
+#result{
+    background: blue;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#operators:hover{
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+button:hover{
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
